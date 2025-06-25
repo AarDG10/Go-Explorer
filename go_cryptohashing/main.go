@@ -8,7 +8,7 @@ import (
 
 func cryptic(a string) string { //Caesar's Cipher
 	b := []byte(a) //converting to mutable string
-	for j := 0; j < len(a); j++ {
+	for j := range len(a) {
 		//first make sure all are in lower case (lower_case encryption)
 		if b[j] >= 65 && b[j] <= 90 {
 			b[j] += 32
